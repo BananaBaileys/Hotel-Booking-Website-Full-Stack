@@ -1,0 +1,11 @@
+extends layout 
+include mixins/_hotel
+
+block content 
+    h1= title 
+    each hotel in allHotels
+        .hotel_wrapper
+            +hotel(hotel)
+
+    // p=allHotels[0].hotel_name ways to show hotel and names by using .
+

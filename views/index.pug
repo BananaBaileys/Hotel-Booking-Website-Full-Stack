@@ -1,0 +1,40 @@
+extends layout
+include mixins/_hotel
+
+block content
+
+  .outer_wrapper 
+    .hotel_wrapper 
+      h2 Hotels 
+        a(href="/all") (see all);
+
+      +hotel
+
+
+
+
+
+
+
+
+
+//-
+  // layout using pug js
+  // = uses java script
+  h1= title
+  h1 titleszz
+  p Welcome to lets travel!
+  img(src="images/beach.jpg")
+
+  - const meals = ["breakfast", "lunch", "dinner"]
+  div 
+    h1 list
+    h1 no space 
+    
+    ul 
+      each shit in meals 
+        li= 'i love ' + shit
+
+
+
+
